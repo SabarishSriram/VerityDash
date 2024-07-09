@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import p1 from "../assets/p1.jpeg"
 import p2 from "../assets/p2.jpg";
 import p3 from "../assets/p3.jpg";
@@ -14,7 +14,6 @@ function Topleft() {
         {name:"Adeline Watson", email:"adelin@gmail.com",deal:"+ $214.4", img:p4},
         {name:"Juan Harrington", email:"juan@gmail.com",deal:"+ $535.2", img:p5}
     ]
-    console.log(p1)
 
     const list= data.map((item)=>(
         <div className='flex items-center mx-2 font-semibold my-[10px] text-sm justify-evenly'>
@@ -28,10 +27,9 @@ function Topleft() {
             <div className='text-green-500'>
                 {item.deal}
             </div>
-            
-            
         </div>
     ))
+    
 
   return (
     <div>

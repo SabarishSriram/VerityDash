@@ -16,9 +16,9 @@ function Navbar() {
           <p className='text-white tracking-wider font-semibold text-xl text-left '>VerityDash</p>
         </div>
         
-        <div className='flex border border-[#323232] rounded-2xl ml-16 items-center bg-[#111218]'>
+        <div className='flex border-[1.5px] focus-within:border-[#5c1fbe] border-[#323232] rounded-2xl ml-16 items-center bg-[#111218]'>
           <FiSearch size={20} className='text-[#DDDDDF] mx-[15px] my-2' />
-          <input type="text" placeholder='Search Something....' className='bg-[#08070F] w-40 font-semibold text-xs' />
+          <input type="text" placeholder='Search Something...' className='bg-[#111218] focus:outline-none w-40 font-semibold placeholder:m-1 text-md  text-[#DDDDDF] text-xs' />
           <button className='text-[#DDDDDF] bg-[#5c1fbe] text-xs px-4 py-1 border rounded-lg border-[#323232] font-bold mx-2'>Search</button>
         </div>
 
