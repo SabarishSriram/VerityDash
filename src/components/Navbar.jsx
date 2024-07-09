@@ -5,6 +5,7 @@ import { BsChatText } from "react-icons/bs";
 import { IoIosSettings } from "react-icons/io";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
+import Logo from '../assets/logo.png'
 
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
     <div>
       <div className='flex h-24 items-center'>
         <div className='flex items-center'>
-          <img src="../src/assets/logo.png" className='w-16' alt="" />
+          <img src={Logo} className='w-16' alt="" />
           <p className='text-white tracking-wider font-semibold text-xl text-left '>VerityDash</p>
         </div>
         
