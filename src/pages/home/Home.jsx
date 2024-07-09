@@ -4,8 +4,8 @@ import Topleft from '../../components/Topleft'
 
 function Home() {
   return (
-    <div className='grid grid-rows-4 grid-cols-4 gap-4 mx-6 my-2 '>
-      <div className='row-span-3 border'><Topleft/></div>
+    <div className='grid grid-rows-4 grid-cols-4 gap-4 mx-6 my-1 '>
+      <div className=' bg-gradient-to-t from-[#111118] rounded-2xl to-[#282934] row-span-3'><Topleft/></div>
       <div className='border px-5 py-10'>02</div>
       <div className='border px-5 py-10'>03</div>
       <div className='border row-span-3 px-5 py-10'>04</div>

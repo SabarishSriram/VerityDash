@@ -19,7 +19,7 @@ function Navbar() {
         <div className='flex border border-[#323232] rounded-2xl ml-16 items-center bg-[#111218]'>
           <FiSearch size={20} className='text-[#DDDDDF] mx-[15px] my-2' />
           <input type="text" placeholder='Search Something....' className='bg-[#08070F] w-40 font-semibold text-xs' />
-          <button className='text-[#DDDDDF] bg-[#1D1E27] text-xs px-4 py-1 border rounded-lg border-[#323232] font-bold mx-2'>Search</button>
+          <button className='text-[#DDDDDF] bg-[#5c1fbe] text-xs px-4 py-1 border rounded-lg border-[#323232] font-bold mx-2'>Search</button>
         </div>
 
         <div className='text-[#DDDDDF] border border-[#323232] bg-[#111218] py-2 px-3 rounded-3xl flex ml-[490px] gap-4 '>

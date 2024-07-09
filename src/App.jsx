@@ -24,7 +24,7 @@ function App() {
             <Menu/>
           </div>
 
-          <div className='bg-black text-white w-5/6' >
+          <div className='bg-[#08070F]  text-white w-5/6' >
             <Outlet/>
           </div>  
 
