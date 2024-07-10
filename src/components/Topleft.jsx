@@ -15,6 +15,7 @@ function Topleft() {
         {name:"Juan Harrington", email:"juan@gmail.com",deal:"+ $535.2", img:p5}
     ]
 
+    
     const list= data.map((item)=>(
         <div className='flex items-center mx-2 font-semibold my-[10px] text-sm justify-evenly'>
             <div>
