@@ -14,17 +14,17 @@ function App() {
     return(
       <div className=''>
 
-        <div className='b-[#121319] bg-black'>
+        <div className='b-[#121319] fixed z-3 bg-black'>
           <Navbar/>
         </div>
         
         <div className='flex'>
 
-          <div className='bg-[#13151B] w-56 rounded-r-3xl'>
+          <div className='bg-[#13151B]  w-52 fixed z-2 top-24 rounded-r-3xl'>
             <Menu/>
           </div>
 
-          <div className='bg-[#08070F]  text-white w-5/6' >
+          <div className='bg-[#08070F] z-1 pt-24 ml-52  text-white w-5/6' >
             <Outlet/>
           </div>  
 

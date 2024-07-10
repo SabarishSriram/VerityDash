@@ -5,13 +5,13 @@ import { FiSearch } from "react-icons/fi";
 function Chartbox(props) {
 
     const data = [
-        { name: 'Page A', uv: 4000,pv: 2400,amt: 2400 },
-        { name: 'Page B', uv: 3000, pv: 1398, amt: 2210},
-        { name: 'Page C', uv: 2000, pv: 9800, amt: 2290 },
-        { name: 'Page D', uv: 2780, pv: 3908, amt: 2000 },
-        { name: 'Page E', uv: 1890, pv: 4800, amt: 2181 },
-        { name: 'Page F', uv: 2390, pv: 3800, amt: 2500 },
-        { name: 'Page G', uv: 3490, pv: 4300, amt: 2100 },
+        { name: 'Page A', users: 2400},
+        { name: 'Page B', users: 1398},
+        { name: 'Page C', users: 9800},
+        { name: 'Page D', users: 3908},
+        { name: 'Page E', users: 4800},
+        { name: 'Page F', users: 3800},
+        { name: 'Page G', users: 4300},
     ]
 
   return (
@@ -25,15 +25,15 @@ function Chartbox(props) {
         <div className='flex flex-col flex-1 justify-between'>
             <div className='w-full h-10'>
                 <ResponsiveContainer width="100%" height="100%">
-                    <LineChart width={300} height={100} data={data}>
+                    <LineChart width={300} height={100} data={props.data}>
                         <Tooltip 
                             labelStyle={{display:"none"}} 
                             contentStyle={{background:"transparent", border:"0px",}}
-                            position={{x:0,y:-50}}/>
+                            position={{x:-20,y:-55}}/>
                             
                         <Line 
                             type="monotone" 
-                            dataKey="pv" 
+                            dataKey={props.datakey} 
                             stroke={props.colour} 
                             dot={false} 
                             strokeWidth={2.3} />

@@ -33,7 +33,7 @@ function Topleft() {
     
 
   return (
-    <div>
+    <div className=''>
         <p className='font-extrabold text-[#c0c0c0] text-xl mx-6 my-5'>Top Deals</p>
         <div>
             {list}
