@@ -8,6 +8,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { LuUserCog } from "react-icons/lu";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { data } from 'autoprefixer';
+import { Navigate } from 'react-router-dom';
 
 
 function Menu() {
@@ -20,25 +21,30 @@ function Menu() {
   ]
 
   const data2=[
-    {name:"Settings", icon: IoSettingsOutline},
-    {name:"User Management", icon: LuUserCog},
-    {name:"Help and Support", icon:MdOutlineSupportAgent}
+    {name:"Settings", icon: IoSettingsOutline, number:5},
+    {name:"User Management", icon: LuUserCog, number:6},
+    {name:"Help and Support", icon:MdOutlineSupportAgent, number:7}
   ]
-  const [bg, setbg] = useState(null)
+  const [bg, setbg] = useState(1)
   const handleclick=(buttonnumber)=>{
     setbg(buttonnumber)
   }
 
 
   const mylist=data1.map((item)=>(
-    <div onClick={()=>handleclick(item.number)} className={bg===item.number?'flex items-center px-3 py-3 text-sm cursor-pointer rounded-2xl bg-[#282a34]':'flex items-center px-3 py-3 text-sm cursor-pointer rounded-2xl hover:bg-[#282a34]'}>
+    <div 
+      onClick={()=>
+        handleclick(item.number)
+
+    } 
+    className={bg===item.number?'flex items-center px-3 py-3 text-sm cursor-pointer rounded-2xl bg-[#282a34]':'flex items-center px-3 py-3 text-sm cursor-pointer rounded-2xl hover:bg-[#282a34]'}>
       <item.icon className='mr-2' size={20}/>
       {item.name}
     </div>
   ))
 
   const mylist2=data2.map((item)=>(
-    <div className='flex items-center px-3 py-3 text-sm cursor-pointer rounded-2xl hover:bg-[#282a34]'>
+    <div onClick={()=>handleclick(item.number)} className={bg===item.number?'flex items-center px-3 py-3 text-sm cursor-pointer rounded-2xl bg-[#282a34]':'flex items-center px-3 py-3 text-sm cursor-pointer rounded-2xl hover:bg-[#282a34]'}>
       <item.icon className='mr-2' size={20}/>
       {item.name}
     </div>
