@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import Products from './pages/products/Products';
 import Navbar from './components/Navbar'
 import Menu from './components/Menu'
+import Calendar from './pages/calendar/Calendar';
 
 
 
@@ -48,8 +49,12 @@ function App() {
       element:<Users/>
     },
     {
-      path:'/products',
+      path:'/Products',
       element:<Products/>
+    },
+    {
+      path:'/Calendar',
+      element:<Calendar/>
     }
   ]}])
 

@@ -11,7 +11,7 @@ import Logo from '../assets/logo.png'
 function Navbar() {
   return (
     <div>
-      <div className='flex h-24 items-center'>
+      <div className='flex h-24 items-center border-b border-[#1e212b]'>
         <div className='flex items-center'>
           <img src={Logo} className='w-16' alt="" />
           <p className='text-white tracking-wider font-semibold text-xl text-left '>VerityDash</p>

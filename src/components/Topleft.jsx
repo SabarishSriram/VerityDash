@@ -34,7 +34,7 @@ function Topleft() {
 
   return (
     <div className=''>
-        <p className='font-extrabold text-[#c0c0c0] text-xl mx-6 my-5'>Top Deals</p>
+        <p className='font-extrabold text-[#F8F5F8] text-xl mx-6 my-5'>Top Deals</p>
         <div>
             {list}
         </div>

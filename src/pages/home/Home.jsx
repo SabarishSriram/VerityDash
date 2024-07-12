@@ -4,6 +4,7 @@ import Topleft from '../../components/Topleft'
 import Chartbox from '../../components/Chartbox'
 import Barchart from '../../components/Barchart'
 import Barchart2 from '../../components/Barchart2'
+import Piechartbox from '../../components/Piechartbox'
 
 function Home() {
   const users = [
@@ -75,7 +76,9 @@ const ratio = [
           datakey="Returns"/>
           
       </div>
-      <div className='border row-span-3 px-5 py-10'>04</div>
+      <div className=' row-span-3 bg-gradient-to-t from-[#111118] rounded-2xl to-[#262833] '>
+        <Piechartbox/>
+      </div>
       <div className='bg-gradient-to-t from-[#111118] rounded-2xl to-[#262833]'>
         <Chartbox
           name="Total Product:"
