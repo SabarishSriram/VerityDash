@@ -76,7 +76,7 @@ const ratio = [
           datakey="Returns"/>
           
       </div>
-      <div className=' row-span-3 bg-gradient-to-t from-[#111118] rounded-2xl to-[#262833] '>
+      <div className='row-span-3 bg-gradient-to-t flex from-[#111118] rounded-2xl to-[#262833] '>
         <Piechartbox/>
       </div>
       <div className='bg-gradient-to-t from-[#111118] rounded-2xl to-[#262833]'>

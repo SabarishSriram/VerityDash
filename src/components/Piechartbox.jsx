@@ -1,5 +1,6 @@
 import React from 'react'
-import { Cell, Pie, PieChart, Tooltip } from 'recharts'
+import { PieChart } from '@mui/x-charts/PieChart';
+import { Box } from '@mui/material';
 
 function Piechartbox() {
     const data = [
@@ -8,26 +9,26 @@ function Piechartbox() {
         { name: 'Group C', value: 300 , color:"#0E8DEA" },
         { name: 'Group D', value: 200, color:"#f018c1" },
       ];
-    const datacolor=data.color;
 
   return (
-    <div className='w-full h-full justify-center items-center'>
-        <h1 className='font-extrabold text-xl text-center mt-6 hover:underline'>Leads By Source:</h1>
-        <PieChart width={240} height={225}>
-          <Tooltip contentStyle={{borderRadius:"10px", background:"white", border:"none"}}/>
-        <Pie
-          data={data}
-          innerRadius={70}
-          outerRadius={90}
-          fill="#000000"
-          paddingAngle={5}
-          dataKey="value"
-        >
-          {data.map((item) => (
-            <Cell key={item.name} fill={item.color} />
-          ))}
-        </Pie>
-      </PieChart>
+    <div className='w-full flex flex-col items-center'>
+      <div>
+        <p className='font-extrabold w-full text-xl mt-6 hover:underline'>Leads By Source:</p>
+      </div>
+      <div className='w-36 mt-5'>
+        <PieChart
+            series={[
+              {
+              data,
+              highlightScope: { faded: 'global', highlighted: 'item' },
+              faded: { innerRadius: 20, additionalRadius: -20, color: 'gray' },
+              },
+              
+            ]}
+              width={240}
+              height={200}
+            />
+      </div>
     </div>
   )
 }
