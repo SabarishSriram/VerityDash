@@ -5,6 +5,7 @@ import Chartbox from '../../components/Chartbox'
 import Barchart from '../../components/Barchart'
 import Barchart2 from '../../components/Barchart2'
 import Piechartbox from '../../components/Piechartbox'
+import Bigchartbox from '../../components/Bigchartbox'
 
 function Home() {
   const users = [
@@ -103,7 +104,9 @@ const ratio = [
           datakey="Ratio"
         />
       </div>
-      <div className='border row-span-2 col-span-2 px-5 py-10'>07</div>
+      <div className='row-span-2 col-span-2 bg-gradient-to-t from-[#111118] rounded-2xl to-[#262833]'>
+        <Bigchartbox/>
+      </div>
       <div className=' bg-gradient-to-t from-[#111118] rounded-2xl to-[#262833] row-[span_1_/_span_4]'>
         <Barchart/>
       </div>
