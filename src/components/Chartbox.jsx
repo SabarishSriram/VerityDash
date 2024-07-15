@@ -28,7 +28,7 @@ function Chartbox(props) {
                     <LineChart width={300} height={100} data={props.data}>
                         <Tooltip 
                             labelStyle={{display:"none"}} 
-                            contentStyle={{background:"transparent", border:"0px",}}
+                            contentStyle={{background:"#13151B", border:"0px", borderRadius:"15px"}}
                             position={{x:-20,y:-55}}/>
                             
                         <Line 

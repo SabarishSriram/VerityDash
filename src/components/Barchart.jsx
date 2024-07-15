@@ -17,12 +17,12 @@ function Barchart() {
     
   return (
     <div className='w-full'>
-        <p className='font-bold text-base ml-4 mt-3'>Total Visit: <span className='text-[#752aee]'>32016</span></p>
+        <p className='font-bold text-base ml-4 mt-3'>Total Visit: <span className='text-[#f79502]'>32016</span></p>
         <div className='flex w-full h-20 '>
             <ResponsiveContainer width="100%" height="100%">
                 <BarChart width={150} height={40} data={data}>
                     <Tooltip contentStyle={{border:"none", borderRadius:"10px", background:"#000000"}} labelStyle={{display:"none"}} cursor={{fill:"none"}}/>
-                    <Bar dataKey="Visit" fill="#752aee" />
+                    <Bar dataKey="Visit" fill="#f79502" />
                 </BarChart>
             </ResponsiveContainer>
         </div>

@@ -1,6 +1,5 @@
-import { Tooltip } from '@mui/material';
 import React from 'react'
-import { Area, AreaChart, CartesianGrid, ResponsiveContainer, XAxis, YAxis } from 'recharts'
+import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 
 function Bigchartbox() {
 
@@ -32,13 +31,13 @@ function Bigchartbox() {
             bottom: 0,
           }}
         >
-          <CartesianGrid/>
+          
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip />
-          <Area type="monotone" dataKey="uv" stackId="1" stroke="#8884d8" fill="#8884d8" />
-          <Area type="monotone" dataKey="pv" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-          <Area type="monotone" dataKey="amt" stackId="1" stroke="#ffc658" fill="#ffc658" />
+          <Tooltip contentStyle={{background:"black", border:"none", borderRadius:"25px"}} labelStyle={{display:"none"}}  />
+          <Area  type="monotone" dataKey="uv" stackId="1" stroke="" fill="#47018c" />
+          <Area type="monotone" dataKey="pv" stackId="1" stroke="" fill="#6704c9" />
+          <Area type="monotone" dataKey="amt" stackId="1" stroke="" fill="#7e02fa" />
         </AreaChart>
       </ResponsiveContainer>
     </div>

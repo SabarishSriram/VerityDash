@@ -17,12 +17,12 @@ function Barchart2() {
     
   return (
     <div className='w-full'>
-        <p className='font-bold text-base ml-4 mt-3'>Profit Earned: <span className='text-[#f27a3e]'>32016</span></p>
+        <p className='font-bold text-base ml-4 mt-3'>Profit Earned: <span className='text-[#03fcdf]'>32016</span></p>
         <div className='flex w-full h-20 '>
             <ResponsiveContainer width="100%" height="100%">
                 <BarChart width={150} height={40} data={data}>
                     <Tooltip contentStyle={{border:"none", borderRadius:"10px", background:"#000000"}} labelStyle={{display:"none"}} cursor={{fill:"none"}}/>
-                    <Bar dataKey="Visit" fill="#f27a3e" />
+                    <Bar dataKey="Visit" fill="#03fcdf" />
                 </BarChart>
             </ResponsiveContainer>
         </div>
