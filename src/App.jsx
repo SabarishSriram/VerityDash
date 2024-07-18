@@ -3,8 +3,8 @@ import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
 import Users from './pages/users/Users';
 import Home from './pages/home/Home';
 import Products from './pages/products/Products';
-import Navbar from './components/Navbar'
-import Menu from './components/Menu'
+import Navbar from "./pages/home/components/Navbar";
+import Menu from './pages/home/components/Menu'
 import Calendar from './pages/calendar/Calendar';
 
 

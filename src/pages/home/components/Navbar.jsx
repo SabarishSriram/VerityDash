@@ -5,7 +5,7 @@ import { BsChatText } from "react-icons/bs";
 import { IoIosSettings } from "react-icons/io";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
-import Logo from '../assets/logo.png'
+import Logo from '../../../assets/logo.png'
 
 
 function Navbar() {

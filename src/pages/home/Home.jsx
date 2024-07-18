@@ -1,11 +1,10 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
-import Topleft from '../../components/Topleft'
-import Chartbox from '../../components/Chartbox'
-import Barchart from '../../components/Barchart'
-import Barchart2 from '../../components/Barchart2'
-import Piechartbox from '../../components/Piechartbox'
-import Bigchartbox from '../../components/Bigchartbox'
+import Topleft from "./components/Topleft"
+import Chartbox from './components/Chartbox'
+import Barchart from './components/Barchart'
+import Barchart2 from './components/Barchart2'
+import Piechartbox from './components/Piechartbox'
+import Bigchartbox from './components/Bigchartbox'
 
 function Home() {
   const users = [

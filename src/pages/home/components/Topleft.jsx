@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import p1 from "../assets/p1.jpeg"
-import p2 from "../assets/p2.jpg";
-import p3 from "../assets/p3.jpg";
-import p4 from "../assets/p4.jpg";
-import p5 from "../assets/p5.jpeg";
+import p1 from "../../../assets/p1.jpeg"
+import p2 from "../../../assets/p2.jpg";
+import p3 from "../../../assets/p3.jpg";
+import p4 from "../../../assets/p4.jpg";
+import p5 from "../../../assets/p5.jpeg";
 
 
 function Topleft() {
