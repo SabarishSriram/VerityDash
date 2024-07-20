@@ -1,5 +1,5 @@
 import React from 'react'
-import Datatable from './Datatable'
+import Datatable from './components/Datatable'
 
 function Users() {
   return (
