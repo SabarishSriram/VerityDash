@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { DataGrid } from '@mui/x-data-grid'
+import { DataGrid, GridToolbar } from '@mui/x-data-grid'
 import React from 'react'
 
 function Datatable() {
@@ -51,7 +51,7 @@ function Datatable() {
     <div className=''>
         <Box>
         <DataGrid
-        className=''
+        className='bg-white'
         rows={rows}
         columns={columns}
         initialState={{
@@ -61,33 +61,23 @@ function Datatable() {
             },
           },
         }}
+        disableColumnFilter
+        disableDensitySelector
+        disableColumnSelector
+        slots={{toolbar:GridToolbar}}
+        slotProps={{
+          toolbar:{
+            showQuickFilter:true,
+            quickFilterProps:{debounceMs:100}
+          }
+        }}
         pageSizeOptions={[5]}
         checkboxSelection
         disableRowSelectionOnClick
         sx={{
-            '& .MuiDataGrid-root': {
-              color: 'white',
-              backgroundColor: 'black',
-            },
-            '& .MuiDataGrid-cell': {
-                
-              color: 'white',
-            },
-            '& .MuiDataGrid-columnHeader': {
-              backgroundColor:"black",
-              color: 'white',
-            },
-            '& .MuiDataGrid-columnHeaderTitle': {
-                
-                color: 'white',
-            },
-            '& .MuiDataGrid-footerContainer': {
-              backgroundColor: 'black',
-              color: 'white',
-            },
-            '& .MuiCheckbox-root svg': {
-              fill: 'white',
-            },
+          '& .MuiDataGrid-toolbarContainer': {
+            flexDirection:"row-reverse"
+          },
         }}
         
       />
