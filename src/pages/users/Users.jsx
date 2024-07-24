@@ -3,7 +3,7 @@ import Datatable from './components/Datatable'
 
 function Users() {
   return (
-    <div>
+    <div className='px-10'>
       <div>
         <p>Users</p>
         <button>Add New User</button>
