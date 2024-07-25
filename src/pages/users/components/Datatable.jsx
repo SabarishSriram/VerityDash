@@ -61,7 +61,6 @@ function Datatable() {
             },
           },
         }}
-        disableColumnFilter
         disableDensitySelector
         disableColumnSelector
         slots={{toolbar:GridToolbar}}
